@@ -8,9 +8,9 @@ http://jformz.com
 
  &lang;div id="formView" &rang; &lang;/div&rang;
         
-        &lang;script src='jFormz.js'&rang;&lang;/script&rang;
+     <script src='jFormz.js'></script>
         
-        &lang;script&rang;
+        <script>
         //INSTANTIATE
         var jf = new Jformz();
         
@@ -34,7 +34,7 @@ http://jformz.com
         //SHOW THE FORM
         jf.showView('formView', view);
         
-        &lang;/script&rang;
+        </script>
 
 
 
