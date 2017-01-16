@@ -20,14 +20,15 @@
         }   
         
         //TEXT INPUT
-        Jformz.prototype.inputText = function(jType,jId,jClass,jName,jPh,jVal,jRequire){
-        var j = '<input type="'+jType+'" class="'+jClass+'" name="'+jName+'" placeholder="'+jPh+'" value="'+jVal+'" '+jRequire+' />';
+        Jformz.prototype.inputText = function(jId,jClass,jName,jPh,jVal,jRequire){
+        var j = '<input type="text" class="'+jClass+'" name="'+jName+'" placeholder="'+jPh+'" value="'+jVal+'" '+jRequire+' />';
         return j;     
         }
  
+ 
         
        //GENERIC INPUT (email, search, tel, url, etc)
-        Jformz.prototype.inputText = function(jType,jId,jClass,jName,jPh,jVal,jRequire){
+        Jformz.prototype.genInput = function(jType,jId,jClass,jName,jPh,jVal,jRequire){
         var j = '<input type="'+jType+'" class="'+jClass+'" name="'+jName+'" placeholder="'+jPh+'" value="'+jVal+'" '+jRequire+' />';
         return j;     
         }        
