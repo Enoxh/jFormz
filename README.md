@@ -6,6 +6,8 @@ You can find documentation on this website.
 
 http://jformz.com
 
+<h2>Usage</h2>
+
  &lang;div id="formView" &rang; &lang;/div&rang;
         
      <script src='jFormz.js'></script>
