@@ -20,13 +20,12 @@
         }   
         
         //TEXT INPUT
+        //TEXT INPUT
         Jformz.prototype.inputText = function(jId,jClass,jName,jPh,jVal,jRequire){
-        var j = '<input type="text" class="'+jClass+'" name="'+jName+'" placeholder="'+jPh+'" value="'+jVal+'" '+jRequire+' />';
+        var j = '<input type="text" id="'+jId+'" class="'+jClass+'" name="'+jName+'" placeholder="'+jPh+'" value="'+jVal+'" '+jRequire+' />';
         return j;     
         }
- 
- 
-        
+  
        //GENERIC INPUT (email, search, tel, url, etc)
         Jformz.prototype.genInput = function(jType,jId,jClass,jName,jPh,jVal,jRequire){
         var j = '<input type="'+jType+'" class="'+jClass+'" name="'+jName+'" placeholder="'+jPh+'" value="'+jVal+'" '+jRequire+' />';
@@ -39,13 +38,11 @@
         return j;     
         }          
         
-       
         //DATE INPUT
         Jformz.prototype.dateInput = function(jId,jClass,jName,jMin,jMax,jRequire){
         var j = '<input type="date" class="'+jClass+'" name="'+jName+'" min="'+jMin+'" max="'+jMax+'" id="'+jId+'" '+jRequire+' />';
         return j;     
         }        
-        
         
         //COLOR INPUT
         Jformz.prototype.colorInput = function(jId,jClass,jName,jRequire){
@@ -71,14 +68,11 @@
         return j;     
         }
         
-        
-        
         //RADIO BUTTON
         Jformz.prototype.radioInput = function(jId,jClass,jName,jVal,jChkd,jRequire){
         var j = '<input id="'+jId+'" class="'+jClass+'" type="radio" name="'+jName+'" value="'+jVal+'" '+jChkd+' '+jRequire+'> ';
         return j;     
         }       
-        
         
         //CHECKBOX
         Jformz.prototype.checkBoxInput = function(jId,jClass,jName,jVal,jChkd,jRequire){
@@ -86,15 +80,12 @@
         return j;     
         }        
         
-        
-        
         //TEXTAREA
         Jformz.prototype.textArea = function(jId,jClass,jName,jHtchml){
         var j = '<textarea id="'+jId+'" class="'+jClass+'" name="'+jName+'">'+jHtchml+'</textarea>';
         return j;     
         }  
 
-        
         //SELECT LIST
         Jformz.prototype.selectList= function(jId,jClass,jName,jVals= [['','']]){        
         var j = '<select id="'+jId+'" class="'+jClass+'" name="'+jName+'">';
@@ -104,7 +95,6 @@
         j +='</select>';
         return j;     
         }        
-        
         
         //LINE BREAK
         Jformz.prototype.br = function(){
@@ -125,7 +115,6 @@
         }         
         
         //HTML ELEMENTS
-        
         //GET HTML Element by ID
         Jformz.prototype.getElem = function(jId){
         var j = document.getElementById(jId);
