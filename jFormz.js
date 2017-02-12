@@ -81,11 +81,7 @@
             return j;     
         }  
         
-        //MAKE A LABEL
-        Jformz.prototype.formLabel = function(jText,jClass,jFor){
-            var j = '<label for="'+jFor+'" class="'+jClass+'">'+jText+'</label>';
-            return j;     
-        }   
+   
         
   
         //TEXT INPUT
