@@ -1,81 +1,82 @@
    
         function Jformz(){
-        this.dClass ='form-control';      
-        this.priBtn ='btn btn-primary';  
-        this.fClass = 'form';    
-        this.empty =''
+           this.dClass ='form-control';      
+           this.priBtn ='btn btn-primary';  
+           this.fClass = 'form';    
+           this.empty ='';
         }
         
         //OPEN A FORM   
         Jformz.prototype.openForm = function(jAction,jMethod,jId,jClass,jName){
-        var j = '<form action="'+jAction+'" class="'+jMethod+'" name="'+jName+'"  id="'+jId+'" />';
-        return j;     
+           var j = '<form action="'+jAction+'" class="'+jMethod+'" name="'+jName+'"  id="'+jId+'" />';
+           return j;     
         }  
         
         
         //MAKE A LABEL
         Jformz.prototype.formLabel = function(jText,jClass){
-        var j = '<label clas="'+jClass+'">'+jText+'</label>';
-        return j;     
+           var j = '<label clas="'+jClass+'">'+jText+'</label>';
+           return j;     
         }   
         
         //TEXT INPUT
         Jformz.prototype.inputText = function(jId,jClass,jName,jPh,jVal,jRequire){
-        var j = '<input type="text" id="'+jId+'" class="'+jClass+'" name="'+jName+'" placeholder="'+jPh+'" value="'+jVal+'" '+jRequire+' />';
-        return j;     
+           var j = '<input type="text" id="'+jId+'" class="'+jClass+'" name="'+jName+'" placeholder="'+jPh+'" value="'+jVal+'" '+jRequire+' />';
+           return j;     
         }
   
        //GENERIC INPUT (email, search, tel, url, etc)
         Jformz.prototype.genInput = function(jType,jId,jClass,jName,jPh,jVal,jRequire){
-        var j = '<input type="'+jType+'" class="'+jClass+'" name="'+jName+'" placeholder="'+jPh+'" value="'+jVal+'" '+jRequire+' />';
-        return j;     
+           var j = '<input type="'+jType+'" class="'+jClass+'" name="'+jName+'" placeholder="'+jPh+'" value="'+jVal+'" '+jRequire+' />';
+           return j;     
         }        
 
         //NUMBER INPUT
         Jformz.prototype.numInput = function(jId,jClass,jName,jMin,jMax,jStep,jRequire){
-        var j = '<input type="number" id="'+jId+'" class="'+jClass+'" name="'+jName+'" min="'+jMin+'" max="'+jMax+'"  step="'+jStep+'"'+jRequired+'>';
-        return j;     
+           var j = '<input type="number" id="'+jId+'" class="'+jClass+'" name="'+jName+'" min="'+jMin+'" max="'+jMax+'"  step="'+jStep+'"'+jRequired+'>';
+           return j;     
         }          
         
         //DATE INPUT
         Jformz.prototype.dateInput = function(jId,jClass,jName,jMin,jMax,jRequire){
-        var j = '<input type="date" class="'+jClass+'" name="'+jName+'" min="'+jMin+'" max="'+jMax+'" id="'+jId+'" '+jRequire+' />';
-        return j;     
+           var j = '<input type="date" class="'+jClass+'" name="'+jName+'" min="'+jMin+'" max="'+jMax+'" id="'+jId+'" '+jRequire+' />';
+           return j;     
         }        
         
         //COLOR INPUT
         Jformz.prototype.colorInput = function(jId,jClass,jName,jRequire){
-        var j = '<input type="color" class="'+jClass+'" name="'+jName+'"  id="'+jId+'" '+jRequire+' />';
-        return j;     
+           var j = '<input type="color" class="'+jClass+'" name="'+jName+'"  id="'+jId+'" '+jRequire+' />';
+           return j;     
         }    
 
         //MONTH INPUT
         Jformz.prototype.monthInput = function(jId,jClass,jName,jRequire){
-        var j = '<input type="month" class="'+jClass+'" name="'+jName+'"  id="'+jId+'" '+jRequire+' />';
-        return j;     
+           var j = '<input type="month" class="'+jClass+'" name="'+jName+'"  id="'+jId+'" '+jRequire+' />';
+           return j;     
         }         
 
         //WEEK INPUT
         Jformz.prototype.weekInput = function(jId,jClass,jName,jRequire){
-        var j = '<input type="week" class="'+jClass+'" name="'+jName+'"  id="'+jId+'" '+jRequire+' />';
-        return j;     
+           var j = '<input type="week" class="'+jClass+'" name="'+jName+'"  id="'+jId+'" '+jRequire+' />';
+           return j;     
         }         
 
         //RANGE INPUT
         Jformz.prototype.rangeInput = function(jId,jClass,jName,jMin,jMax,jStep,jRequire){
-        var j = '<input type="range" id="'+jId+'" class="'+jClass+'" name="'+jName+'" min="'+jMin+'" max="'+jMax+'"  step="'+jStep+'"'+jRequired+'>';
-        return j;     
+           var j = '<input type="range" id="'+jId+'" class="'+jClass+'" name="'+jName+'" min="'+jMin+'" max="'+jMax+'"  step="'+jStep+'"'+jRequired+'>';
+           return j;     
         }
         
         //RADIO BUTTON
         Jformz.prototype.radioInput = function(jId,jClass,jName,jVal,jChkd,jRequire){
-        var j = '<input id="'+jId+'" class="'+jClass+'" type="radio" name="'+jName+'" value="'+jVal+'" '+jChkd+' '+jRequire+'> ';
-        return j;     
+           var j = '<input id="'+jId+'" class="'+jClass+'" type="radio" name="'+jName+'" value="'+jVal+'" '+jChkd+' '+jRequire+'> ';
+           return j;     
         }       
         
         //CHECKBOX
         Jformz.prototype.checkBoxInput = function(jId,jClass,jName,jVal,jChkd,jRequire){
- //OPEN A FORM   
+        
+         //OPEN A FORM   
         Jformz.prototype.openForm = function(jAction,jMethod,jId,jClass,jName){
             var j = '<form action="'+jAction+'" method="'+jMethod+'" id="'+jId+'" class="'+jClass+'"  name="'+jName+'"  />';
             return j;     
@@ -172,19 +173,19 @@
         
         //TEXTAREA
         Jformz.prototype.textArea = function(jId,jClass,jName,jHtchml,jRequire){
-        var j = '<textarea id="'+jId+'" class="'+jClass+'" name="'+jName+'" '+jRequire+'>'+jHtchml+'</textarea>';
-        return j;     
+           var j = '<textarea id="'+jId+'" class="'+jClass+'" name="'+jName+'" '+jRequire+'>'+jHtchml+'</textarea>';
+           return j;     
         }  
 
         
         //SELECT LIST
         Jformz.prototype.selectList= function(jId,jClass,jName,jVals= [['','']],jRequire){        
-        var j = '<select id="'+jId+'" class="'+jClass+'" name="'+jName+'" '+jRequire+'>';
-        for(var i=0;i<jVals.length;i++){
-        j +='<option ="'+jVals[i][0]+'">'+jVals[i][1]+'</option>';    
-        }
-        j +='</select>';
-        return j;     
+           var j = '<select id="'+jId+'" class="'+jClass+'" name="'+jName+'" '+jRequire+'>';
+              for(var i=0;i<jVals.length;i++){
+               j +='<option ="'+jVals[i][0]+'">'+jVals[i][1]+'</option>';    
+              }
+           j +='</select>';
+           return j;     
         }            
         
         //LINE BREAK
