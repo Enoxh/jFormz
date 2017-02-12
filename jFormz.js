@@ -82,9 +82,6 @@
             return j;     
         }  
         
-   
-        
-  
         //TEXT INPUT
         Jformz.prototype.inputText = function(jId,jClass,jName,jPh,jVal,jRequire){
             var j = '<input type="text" id="'+jId+'" class="'+jClass+'" name="'+jName+'" placeholder="'+jPh+'" value="'+jVal+'" '+jRequire+' />';
