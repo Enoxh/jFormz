@@ -176,19 +176,20 @@
         
         //TEXTAREA
         Jformz.prototype.textArea = function(jId,jClass,jName,jHtchml,jRequire){
-            var j = '<textarea id="'+jId+'" class="'+jClass+'" name="'+jName+'" '+jRequire+'>'+jHtchml+'</textarea>';
-            return j;     
+        var j = '<textarea id="'+jId+'" class="'+jClass+'" name="'+jName+'" '+jRequire+'>'+jHtchml+'</textarea>';
+        return j;     
         }  
 
+        
         //SELECT LIST
         Jformz.prototype.selectList= function(jId,jClass,jName,jVals= [['','']],jRequire){        
-            var j = '<select id="'+jId+'" class="'+jClass+'" name="'+jName+'" '+jRequire+'">';
-                for(var i=0;i<jVals.length;i++){
-                j +='<option ="'+jVals[i][0]+'">'+jVals[i][1]+'</option>';    
-                }
-            j +='</select>';
-            return j;     
-        }        
+        var j = '<select id="'+jId+'" class="'+jClass+'" name="'+jName+'" '+jRequire+'>';
+        for(var i=0;i<jVals.length;i++){
+        j +='<option ="'+jVals[i][0]+'">'+jVals[i][1]+'</option>';    
+        }
+        j +='</select>';
+        return j;     
+        }            
         
         //LINE BREAK
         Jformz.prototype.br = function(){
