@@ -30,7 +30,17 @@ http://jformz.com
         return view;
         }
         
+OR
 
+        function makeSimpleLogin(){
+        var view = jf.openForm('#method','#action','','form','')
+        +jf.formLabel('Username','label')+jf.inputText('username','form-control','uname','','','require')
+        +jf.br()
+        +jf.formLabel('Password','label')+jf.inputPassword('pass','form-control','pword','','','require')
+        +jf.br()+jf.submitBtn('','','form-control','Login')
+        +jf.closeForm();    
+        return view;
+    }
      //USAGE Assumes you have a div with id="login"
      jf.showView('login',makeSimpleLogin()); 
         
