@@ -73,8 +73,7 @@
            return j;     
         }       
         
-        //CHECKBOX
-        Jformz.prototype.checkBoxInput = function(jId,jClass,jName,jVal,jChkd,jRequire){
+   
         
          //OPEN A FORM   
         Jformz.prototype.openForm = function(jAction,jMethod,jId,jClass,jName){
